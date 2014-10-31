@@ -1,4 +1,5 @@
-dotfiles
+.README
 ========
 
-My collection of .files and configurations
+- http://dotfiles.github.io
+- https://github.com/mathiasbynens/dotfiles
