@@ -13,3 +13,5 @@
   wtf     = !$DOT/bin/git-wtf
   rank-contributers = !$DOT/bin/git-rank-contributers
   count   = !git shortlog -sn
+[credential]
+	helper = netrc -f ~/.netrc.asc -v
