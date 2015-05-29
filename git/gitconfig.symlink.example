@@ -3,15 +3,34 @@
   name = AUTHORNAME
 [core]
   excludesfile = AUTHORHOME/.gitignore
+  editor = vim
 [color]
   ui = auto
 [push]
-  default = upstream
+  default = simple
 [alias]
+  ci = commit
+  co = checkout
+  br = branch
+  st = status
+
+  last = log -1 HEAD
+  ls = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]' --decorate --date=short
   lol = log --oneline --graph --decorate
+  count = !git shortlog -sn
+
   promote = !$DOT/bin/git-promote
   wtf     = !$DOT/bin/git-wtf
   rank-contributers = !$DOT/bin/git-rank-contributers
-  count   = !git shortlog -sn
+
 [credential]
 	helper = netrc -f ~/.netrc.asc -v
+
+
+
+	wipe = reset --hard HEAD
+	undo = reset --soft HEAD^
+	amend = commit --amend -m
+	graph = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+

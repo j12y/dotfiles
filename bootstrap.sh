@@ -145,26 +145,13 @@ install_dotfiles () {
   done
 }
 
-setup_osx () {
-  if [ "$(uname -s)" == "Darwin" ]
-  then
-    info "Setting up osx"
-    if source osx/setup.sh > /tmp/osx-setup
-    then
-      success "osx and homebrew installed"
-    else
-      fail "error installing osx settings"
-    fi
-
-
-  fi
-}
-
 # Main
 setup_gitconfig;
 git pull origin master;
 install_dotfiles;
-setup_osx;
+
+# osx/setup.sh
+# python/setup.sh
 
 echo ''
 echo '  All installed!'

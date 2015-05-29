@@ -5,4 +5,5 @@
 *.rbc
 .venv/*
 .pryrc
+.pyc
 test.sh
