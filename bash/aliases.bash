@@ -3,3 +3,4 @@ alias reload!='source ~/.bashrc'
 
 # Directory listing habits
 alias ll='ls -l'
+alias la='ls -laFG'

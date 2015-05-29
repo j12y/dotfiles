@@ -1,11 +1,13 @@
 [user]
-  email = AUTHOREMAIL
-  name = AUTHORNAME
 [core]
-  excludesfile = AUTHORHOME/.gitignore
+  excludesfile = ~/.gitignore
   editor = vim
 [color]
   ui = auto
+[color "status"]
+    added = green
+    changed = red
+    untracked = cyan
 [push]
   default = simple
 [alias]
@@ -14,6 +16,8 @@
   br = branch
   st = status
 
+  s = status -s
+
   last = log -1 HEAD
   ls = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]' --decorate --date=short
   lol = log --oneline --graph --decorate
@@ -21,16 +25,16 @@
 
   promote = !$DOT/bin/git-promote
   wtf     = !$DOT/bin/git-wtf
-  rank-contributers = !$DOT/bin/git-rank-contributers
+  rank-contributors = !$DOT/bin/git-rank-contributors
+
+  wipe = reset --hard HEAD
+  undo = reset --soft HEAD^
+  graph = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 
 [credential]
 	helper = netrc -f ~/.netrc.asc -v
 
 
 
-	wipe = reset --hard HEAD
-	undo = reset --soft HEAD^
-	amend = commit --amend -m
-	graph = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 

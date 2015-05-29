@@ -147,7 +147,7 @@ install_dotfiles () {
 
 # Main
 setup_gitconfig;
-git pull origin master;
+git pull;
 install_dotfiles;
 
 # osx/setup.sh
