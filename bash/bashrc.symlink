@@ -1,0 +1,18 @@
+# Simple paths for reference
+export DOT=$HOME/.dotfiles
+
+export PATH="./bin:/usr/local/bin:/usr/local/sbin:$DOT/bin:$PATH"
+
+# Use .localrc for anything that should be private
+if [[ -a ~/.localrc ]]; then
+  source ~/.localrc
+fi
+
+# Find additional config files (named *.bash) across the repos
+# and source them.
+config_files=$DOT/**/*.bash
+for file in $config_files ; do
+  #echo $file
+  source $file
+done
+unset config_files
