@@ -1,0 +1,43 @@
+"*":
+  "exception-reporting":
+    userId: "5b967a69-6850-d40d-c848-f946772dc7ea"
+  welcome:
+    showOnStartup: false
+  core:
+    disabledPackages: [
+      "mechanical-keyboard"
+    ]
+    themes: [
+      "seti-ui"
+      "one-dark-syntax"
+    ]
+    projectHome: "/Users/j12y/p"
+    destroyEmptyPanes: false
+    ignoredNames: [
+      "*.pyc"
+      ".git"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+    ]
+  editor:
+    invisibles:
+      {}
+  "vim-mode":
+    {}
+  minimap:
+    {}
+  linter:
+    subtleLinterErrors: [
+      "flake8"
+    ]
+  "git-plus":
+    {}
+  "atom-beautify":
+    _analyticsUserId: "1e1592c5-5cdf-43e7-a568-e4ebac39c3f3"
+  "vim-surround":
+    {}
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
