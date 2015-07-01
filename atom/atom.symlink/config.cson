@@ -22,22 +22,17 @@
       "Thumbs.db"
     ]
   editor:
-    invisibles:
-      {}
-  "vim-mode":
-    {}
-  minimap:
-    {}
+    invisibles: {}
+  "vim-mode": {}
+  minimap: {}
   linter:
     subtleLinterErrors: [
       "flake8"
     ]
-  "git-plus":
-    {}
+  "git-plus": {}
   "atom-beautify":
     _analyticsUserId: "1e1592c5-5cdf-43e7-a568-e4ebac39c3f3"
-  "vim-surround":
-    {}
+  "vim-surround": {}
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true

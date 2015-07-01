@@ -48,4 +48,5 @@ filetype plugin indent on
 " Execute flake8 to check python syntax (also can call F7)
 autocmd BufWritePost *.py call Flake8()
 
-
+" Markdown, never modula
+au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
