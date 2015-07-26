@@ -8,6 +8,8 @@ case "${OSTYPE}" in
     # Use bash completion
     if [[ -f $(brew --prefix)/etc/bash_completion ]]; then
       source $(brew --prefix)/etc/bash_completion
+    elif [[ -f $(brew --prefix)/etc/bash_completion.d/git-prompt.sh ]]; then
+        source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
     fi
 
     # On a Mac, we need to enable tab-completion for SSH hosts manually.
