@@ -34,7 +34,7 @@ defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.Web
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 # Screen captures
-defaults write com.apple.screencapture location ~/documents/screenshots
+defaults write com.apple.screencapture location ~/Screenshots
 
 # # Menu bar: hide the Time Machine, Volume, and User icons
 for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
@@ -42,3 +42,6 @@ for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
         "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
         "/System/Library/CoreServices/Menu Extras/User.menu"
 done
+
+# Show hidden files
+# defaults write com.apple.finder AppleShowAllFiles -bool true
