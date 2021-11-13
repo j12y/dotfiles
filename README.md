@@ -1,22 +1,18 @@
 
 # DOTFILES
 
-Trying to organize shell environments and tools to work well when
-jumping between OSX, Ubuntu, RHEL, Raspberian, etc.
-
-You may find this site informative.
+Reference:
 http://dotfiles.github.io/
 
-I prefer a minimalist approach so am building my env up instead of
-taking another repos entirely as is.  
 
-Obvious influencers:
- - mathiasbynens
- - zachholman
- - paulirish
- - simonowen
- - smashwilson
- - and all those that they've built on
+# SETUP
+
+```
+git clone git@github.com:j12y/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+./bootstrap.sh
+```
+
 
 ## First Time Install
 
